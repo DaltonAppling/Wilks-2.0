@@ -6,7 +6,9 @@
 -[x] Test X repository for its useful features. Document adjustments to make it work as comment.
 
 # Sprint 2
--[] Find out what it takes to (and determine if I can) create a GUI for this program.
+-[x] Find out what it takes to (and determine if I can) create a GUI for this program.
+# It appears thatt creating a new GUI from scratch is outside of the scope of this class. I have determined that the time investment is not currently possible for me to complete. 
+# Program will be completed as code only. No GUI will be involved at this time.
 -[] begin coding for portion 1 (athlete tracking)
 # Above step may be ommited if it is deemed too time consuming in terms of time alloted for project or inefficient for meet directors.
 -[] Begin coding for Wilks 2.0 calculation.
