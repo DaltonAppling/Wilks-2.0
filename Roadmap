@@ -7,8 +7,10 @@
 
 # Sprint 2
 -[x] Find out what it takes to (and determine if I can) create a GUI for this program.
-# Program will be completed as code only. No GUI will be involved at this time.
-# I will be creating a functioning GUI that calculates manually entered lifts.
 -[x] Begin coding for Wilks 2.0 calculator.
--[] Have functioning GUI
--[] Customize
+-[] Have functioning code that can calculate a female athlete's Wilk's score.
+
+# Sprint 3
+# I will be attempting to create a functioning GUI that calculates manually entered lifts.
+-[] Attempt to create a functioning GUI
+-[] Customize GUI
