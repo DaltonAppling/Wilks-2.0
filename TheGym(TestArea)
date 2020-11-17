@@ -1,0 +1,3 @@
+import math
+
+print(-9.054e-08 * 100**5)
