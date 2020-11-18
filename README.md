@@ -1,4 +1,4 @@
-# Wilks-2.0
+# Wilks-Py.1.0
 1. This caclulator will be used to calculate an athlete's relative strength by calculating their total (summation of the squat, bench-press, and deadlift).
 # This is used to determine who is, pound for pound, the strongest athlete in the competition.
 2. This calculator will attempt to track athletes through all of their attempts, omitting failed lifts. This feature will depend on the team's existing time allotted for the project.

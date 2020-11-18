@@ -1,6 +1,7 @@
 # This calculation will evaluate female Wilk's score
 import math
 
+
 weight = input('What is your weight in pounds?')
 total = input('What is your total in pounds?')
 
