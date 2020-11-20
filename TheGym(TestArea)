@@ -1,20 +1,25 @@
 # This calculation will evaluate female Wilk's score
-import math
-import numpy as np
+import decimal
+D=decimal.Decimal
 
-weight = input('What is your weight in pounds?')
-total = input('What is your total in pounds?')
+weight = int(input('What is your weight in pounds?'))
+total = int(input('What is your total in pounds?'))
 
 
-fa = np.array ([594.31747775582])
-fb = np.array ([-27.23842536447])
-fc = np.array ([0.82112226871])
-fd = np.array ([-0.00930733913])
-fe = np.array ([4.731582e-05])
-ff = np.array ([-9.054e-08])
+fa = D('594.31747775582')
+fb = D('-27.23842536447')
+fc = D('0.82112226871')
+fd = D('-0.00930733913')
+fe = D('4.731582e-05')
+ff = D('-9.054e-08')
+'{:.11f}'.format(ff)
+#print statement to ensure correct conversion
+print (fa, fb, fc, fd, fe, ff)
+decimal.getcontext().prec = 11
 
-func_one =  (fa + fb*int(weight)  + fc*int(weight)**2 + fd*int(weight)**3 + fe*int(weight)**4 + ff*int(weight)**5) 
 
-wilks = 500 * int(total) / func_one
+func_one =  (fa + fb*weight  + fc*weight**2 + fd*weight**3 + fe*weight**4 + ff*weight**5) 
 
-print(wilks)
+wilks = 500 * total / func_one
+
+print (int(wilks))
