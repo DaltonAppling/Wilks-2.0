@@ -1,16 +1,20 @@
 # This calculation will evaluate female Wilk's score
 import math
-
+import numpy as np
 
 weight = input('What is your weight in pounds?')
 total = input('What is your total in pounds?')
 
-#a-f are the coefficients for female lifters
-a = 1101100000110110001000001101101110110001011110
-b = -1101.100111101000010010111
-c = 0.11010010001101010001
-d = -0.00000010011000011111
-e = 4.731582e-05
-f = -9.054e-08
 
-wilks =  int(total) * 500 / (a + b*int(weight)  + c*int(weight)**2 + d*int(weight)**3 + e*int(weight)**4 + f*int(weight)**5) 
+fa = np.array ([594.31747775582])
+fb = np.array ([-27.23842536447])
+fc = np.array ([0.82112226871])
+fd = np.array ([-0.00930733913])
+fe = np.array ([4.731582e-05])
+ff = np.array ([-9.054e-08])
+
+func_one =  (fa + fb*int(weight)  + fc*int(weight)**2 + fd*int(weight)**3 + fe*int(weight)**4 + ff*int(weight)**5) 
+
+wilks = 500 * int(total) / func_one
+
+print(wilks)
