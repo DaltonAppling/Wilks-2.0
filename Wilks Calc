@@ -1,10 +1,27 @@
-
+# This calculation will evaluate female Wilk's score
 import decimal
 D=decimal.Decimal
 
+weight = int(input('What is your weight in pounds?'))
+total = int(input('What is your total in pounds?'))
+
+
+fa = D('594.31747775582')
+fb = D('-27.23842536447')
+fc = D('0.82112226871')
+fd = D('-0.00930733913')
+fe = D('4.731582e-05')
 ff = D('-9.054e-08')
-'{:f}'.format(ff)
+ff2 = '{:f}'.format(ff)
+#print statement to ensure correct conversion
+print (fa, fb, fc, fd, fe, ff2)
 decimal.getcontext().prec = 11
 
-print(ff)
+
+func_one =  (fa + fb*weight  + fc*weight**2 + fd*weight**3 + fe*weight**4 + ff2*weight**5) 
+
+wilks = 500 * total / func_one
+
+print (wilks)
+
 
